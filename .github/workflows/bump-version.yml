@@ -51,7 +51,7 @@ jobs:
         git config user.name 'vavedev'
         git config user.email 'vave.gamedev@gmail.com'
 
-    - name: bump version
+    - name: Bump version
       run: npm version ${{ github.event.inputs.version }}
 
     - name: Push latest version
